@@ -10,14 +10,16 @@ namespace SalesWebMVC.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public ViewResult Index()
         {
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Salles Web MVC Web from Csharp Course.";
+            ViewData["Owner"] = "Wesley Ferreira.";
+            ViewData["email"] = "wesleyferreirasb@gmail.com";
 
             return View();
         }
